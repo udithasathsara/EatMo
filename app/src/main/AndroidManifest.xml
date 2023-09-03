@@ -30,7 +30,7 @@
             android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".ChefRegisteration"
+            android:name=".ChefRegistration"
             android:exported="false" />
         <activity
             android:name=".Chefloginphone"
