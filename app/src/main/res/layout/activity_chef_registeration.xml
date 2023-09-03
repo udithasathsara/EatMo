@@ -104,7 +104,7 @@
                 android:orientation="horizontal">
 
                 <com.hbb20.CountryCodePicker
-                    android:id="@+id/CountryCode"
+                    android:id="@+id/countrycode"
                     android:layout_width="120dp"
                     android:layout_height="match_parent">
 
@@ -137,7 +137,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/Area"
+                android:id="@+id/AreaCh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="11dp">
@@ -150,7 +150,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/Pincode"
+                android:id="@+id/PincodeCh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="11dp">
@@ -170,7 +170,7 @@
                 android:textSize="14sp" />
 
             <Spinner
-                android:id="@+id/Statee"
+                android:id="@+id/StateeCh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -184,7 +184,7 @@
                 android:text="City" />
 
             <Spinner
-                android:id="@+id/Citys"
+                android:id="@+id/CitysCh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp" />

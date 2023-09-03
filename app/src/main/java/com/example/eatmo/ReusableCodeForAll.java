@@ -12,6 +12,7 @@ public static void ShowAlert(Context context,String title,String message){
     builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
         @Override
         public void onClick(DialogInterface dialog, int which) {
+
             dialog.dismiss();
         }
     }).setTitle(title).setMessage(message).show();
