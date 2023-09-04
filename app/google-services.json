@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1056169636788-1e955kiagcrlcm5mr8s100ipq2m09j3e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eatmo",
+            "certificate_hash": "58d73f78b730acfbe768c584fdb6e480c720f6df"
+          }
+        },
+        {
           "client_id": "1056169636788-bg3rsveeqkoao3q2ota3idu9flm790mr.apps.googleusercontent.com",
           "client_type": 3
         }
