@@ -48,7 +48,7 @@ public class ChefRegistration extends AppCompatActivity {
 
         Fname = (TextInputLayout) findViewById(R.id.Firstname);
         Lname = (TextInputLayout) findViewById(R.id.Lastname);
-        Email = (TextInputLayout) findViewById(R.id.Email);
+        Email = (TextInputLayout) findViewById(R.id.LemailCh);
         Pass = (TextInputLayout) findViewById(R.id.Pwd);
         cpass = (TextInputLayout) findViewById(R.id.Cpass);
         mobileno = (TextInputLayout) findViewById(R.id.Mobileno);
