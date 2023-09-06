@@ -76,7 +76,7 @@ public class ChefVerifyPhone extends AppCompatActivity {
             public void onTick(long millisUntilFinished) {
 
                 txt.setVisibility(View.VISIBLE);
-                txt.setText("Resend Code Within"+millisUntilFinished/1000+"Seconds");
+                txt.setText("Resend Code Within "+millisUntilFinished/1000+" Seconds");
             }
 
             @Override
@@ -94,6 +94,25 @@ public class ChefVerifyPhone extends AppCompatActivity {
 
                 Resend.setVisibility(View.INVISIBLE);
                 Resendotp(phoneno);
+
+                new CountDownTimer(60000,1000){
+
+                    @Override
+                    public void onTick(long millisUntilFinished) {
+
+                        txt.setVisibility(View.VISIBLE);
+                        txt.setText("Resend Code Within "+millisUntilFinished/1000+"Seconds ");
+                    }
+
+                    @Override
+                    public void onFinish() {
+
+                        Resend.setVisibility(View.VISIBLE);
+                        txt.setVisibility(View.INVISIBLE);
+
+                    }
+                }.start();
+
             }
         });
 
