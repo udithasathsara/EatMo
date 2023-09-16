@@ -3,6 +3,8 @@ package com.example.eatmo;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -11,6 +13,7 @@ import com.example.eatmo.customerFoodPanel.CustomerCartFragment;
 import com.example.eatmo.customerFoodPanel.CustomerHomeFragment;
 import com.example.eatmo.customerFoodPanel.CustomerOrdersFragment;
 import com.example.eatmo.customerFoodPanel.CustomerProfileFragment;
+import com.example.eatmo.customerFoodPanel.CustomerTrackFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class CustomerFoodPanel_BottomNavigation extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
@@ -21,6 +24,23 @@ public class CustomerFoodPanel_BottomNavigation extends AppCompatActivity implem
         setContentView(R.layout.activity_customer_food_panel_bottom_navigation);
         BottomNavigationView navigationView = findViewById(R.id.bottom_navigation);
         navigationView.setOnNavigationItemSelectedListener(this);
+
+        String name = getIntent().getStringExtra("PAGE");
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        if (name != null) {
+            if (name.equalsIgnoreCase("Homepage")) {
+                loadcustomerfragment(new CustomerHomeFragment());
+            } else if (name.equalsIgnoreCase("Preparingpage")) {
+                loadcustomerfragment(new CustomerTrackFragment());
+            } else if (name.equalsIgnoreCase("DeliveryOrderpage")) {
+                loadcustomerfragment(new CustomerTrackFragment());
+            } else if (name.equalsIgnoreCase("ThankYoupage")) {
+                loadcustomerfragment(new CustomerHomeFragment());
+            }
+        } else {
+            loadcustomerfragment(new CustomerHomeFragment());
+        }
 
 
     }
